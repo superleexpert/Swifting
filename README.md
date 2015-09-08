@@ -6,6 +6,9 @@ MARK / TODO / FIXME
 在 Xcode 6β4 中，以下注释将出现在 Xcode 的代码导航（source navigator）中：
 
 // MARK: (等同于 #pragma，记号后紧跟一个横杠 (-) 会被编译成水平分割线)
+
 // TODO:
+
 // FIXME:
+
 其他常规注释标记，如 NOTE 和 XXX 在 Xcode 中不能被识别。
