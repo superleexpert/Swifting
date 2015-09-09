@@ -22,16 +22,15 @@
        (a:Int,b:Int)->Int in  
   
        return a+b  
-      
     }  
 闭包与函数的主要区别是少了func函数名;所以,函数与闭包的主要区别就是闭包是匿名的.
 
 闭包的使用：闭包赋值给一个变量之后,该变量可以直接当函数使
+
    var plus =  
    {  
        (a:Int,b:Int)->Int in  
   
        return a+b  
-      
    }  
 
