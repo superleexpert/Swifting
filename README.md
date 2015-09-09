@@ -27,10 +27,10 @@
 
 闭包的使用：闭包赋值给一个变量之后,该变量可以直接当函数使
 
-   var plus =  
-   {  
-       (a:Int,b:Int)->Int in  
+    var plus =  
+    {  
+        (a:Int,b:Int)->Int in  
   
-       return a+b  
-   }  
+        return a+b  
+    }  
 
