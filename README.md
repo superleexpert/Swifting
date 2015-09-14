@@ -37,7 +37,7 @@
 ##泛型
 在尖括号里写一个名字来创建一个泛型函数或者类型。
 
-       func repeatItem<Item>(item: Item, numberOfTimes: Int) -> [Item] {
+    func repeatItem<Item>(item: Item, numberOfTimes: Int) -> [Item] {
     var result = [Item]()
     for _ in 0..<numberOfTimes {
         result.append(item)
@@ -57,7 +57,7 @@
     possibleInteger = .Some(100)
 在类型名后面使用where来指定对类型的需求，比如，限定类型实现某一个协议，限定两个类型是相同的，或者限定某个类必须有一个特定的父类
 
-       func anyCommonElements <T, U where T: SequenceType, U: SequenceType, T.Generator.Element: Equatable, T.Generator.Element ==    U.Generator.Element> (lhs: T, _ rhs: U) -> Bool {
+    func anyCommonElements <T, U where T: SequenceType, U: SequenceType, T.Generator.Element: Equatable, T.Generator.Element ==    U.Generator.Element> (lhs: T, _ rhs: U) -> Bool {
     for lhsItem in lhs {
         for rhsItem in rhs {
             if lhsItem == rhsItem {
