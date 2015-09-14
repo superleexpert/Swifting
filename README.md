@@ -77,7 +77,25 @@ OC里没有的概念，元组（tuples）把多个值组合成一个复合值。
     print("The status code is \(justTheStatusCode)")
     // 输出 "The status code is 404"
     
-    
+##可选绑定    
+
+使用可选绑定（optional binding）来判断可选类型是否包含值，如果包含就把值赋给一个临时常量或者变量。可选绑定可以用在if和while语句中来对可选类型的值进行判断并把值赋给一个常量或者变量。if和while语句，请参考控制流。
+
+    if let actualNumber = Int(possibleNumber) {
+    print("\'\(possibleNumber)\' has an integer value of \(actualNumber)")
+    } else {
+     print("\'\(possibleNumber)\' could not be converted to an integer")
+    }
+    // 输出 "'123' has an integer value of 123"
+这段代码可以被理解为：
+
+“如果Int(possibleNumber)返回的可选Int包含一个值，创建一个叫做actualNumber的新常量并将可选包含的值赋给它。”
+
+多个可选绑定可以用逗号分隔，作为一列表达式出现在一个if语句中。
+
+    if let constantName = someOptional, anotherConstantName = someOtherOptional {
+    statements
+    }
 
 
 
