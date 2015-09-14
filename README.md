@@ -68,6 +68,18 @@
     return false
     }
     anyCommonElements([1, 2, 3], [3])
+    
+##元组
+OC里没有的概念，元组（tuples）把多个值组合成一个复合值。元组内的值可以是任意类型，并不要求是相同类型。
+如果你只需要一部分元组值，分解的时候可以把要忽略的部分用下划线（_）标记：
+
+    let (justTheStatusCode, _) = http404Error
+    print("The status code is \(justTheStatusCode)")
+    // 输出 "The status code is 404"
+    
+    
+
+
 
 
 
